@@ -1,0 +1,36 @@
+body{
+    background-image: url(images/star.png);
+    background-size: 100px 50px;
+}
+img{
+    
+}
+#syoukai{
+    text-align: center;
+    width: 100px;
+    background-color: #ff0000;
+    color: #fff;
+}
+main{
+    margin-left: 300px;
+}
+p#name1,p#name2,p#name3,p#name4{
+    background-color: #a52;
+    color: #fff;
+}
+#name1{
+    margin-left: 10px;
+    padding-left: 40px;
+}
+#name2{
+    margin-left: 20px;
+    padding-left: 30px;
+}
+#name3{
+    margin-left: 30px;
+    padding-left: 20px;
+}
+#name4{
+    margin-left: 40px;
+    padding-left: 10px;
+}
