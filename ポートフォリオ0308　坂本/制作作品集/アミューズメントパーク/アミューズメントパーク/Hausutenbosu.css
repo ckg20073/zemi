@@ -1,0 +1,432 @@
+body{
+    margin: 0 auto;
+}
+.demobox-header{
+    background: #fff;
+    height: 80px;
+    padding: 1em;
+    }
+    /* headerのサイト名（デモの参考値） */
+    .demobox-sitename{
+    font-weight: 700;
+    font-size: 50px;
+    color: #001f7e;
+    }
+    #logo{
+        margin-top: -10px;
+    }
+    /* 全体調整CSS */
+    .hamburger-demo-menubox *{
+        font-size: 16px;
+    }
+    .hamburger-demo-menubox li{
+        font-size: 14px;
+    }
+    /* hamburgerここから */
+        /* inputを非表示 */
+    .input-hidden{
+        display: none;
+    }
+        /* label */
+    .hamburger-demo-switch{
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        top: 0; /* ハンバーガーアイコンの位置（上から） */
+        z-index: 9999;
+        width: 4em; /* アイコン（クリック可能領域）の幅 */
+        height: 4em; /* アイコン（クリック可能領域の）高さ */
+    }
+    /* メニュー展開時にハンバーガーアイコンを固定 */
+    #hamburger-demo1:checked ~ .hamburger-demo-switch{
+        position: fixed;
+    }
+    /* ハンバーガーアイコン */
+    .hamburger-switch-line1, .hamburger-switch-line1:before, .hamburger-switch-line1:after{
+        width: 25px;
+        height: 3px;
+        background: #333; /* ハンバーガーアイコンの色 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .3s;
+        content: "";
+    }
+    .hamburger-switch-line1{
+            transform: translate(-50%, -50%);
+    }
+    .hamburger-switch-line1:before{
+        transform: translate(-50%, -300%);
+    }
+    .hamburger-switch-line1:after{
+        transform: translate(-50%, 200%);
+    }
+    /* ハンバーガーアイコン･アニメーション */
+    #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1{
+        width: 0;
+    }
+    #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:before{
+        transform: rotate(45deg) translate(-40%, 325%);
+    }
+    #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:after{
+        transform: rotate(-45deg) translate(-40%, -325%);
+    }
+    /* メニューエリア */
+    .hamburger-demo-menuwrap{
+        position: fixed;
+        height: 100%;
+        background: #fafafa; /* メニューエリアの背景色 */
+        padding: 5em 3% 2em;
+        z-index: 9998;
+        transition: .3s;
+        overflow-y: scroll; /* メニュー内容が多い場合に縦スクロールする */
+        top: 0;
+        left: 100%;
+        width: 70%;
+    }
+    /* メニューリスト */
+    .hamburger-demo-menulist{
+        margin-right: 3%;
+        padding-left: 5% !important; /* !important不要な場合もあり */
+        list-style: none;
+    }
+    .hamburger-demo-menulist li a{
+        text-decoration: none;
+        color: #333; /* メニューリストの文字色 */
+        display: block;
+        padding: .5em 0;
+    }
+    /* メニューエリア･アニメーション */
+        /* 右から */
+    #hamburger-demo1:checked ~ .hamburger-demo-menuwrap{
+        left: 70%;
+        background-color: #a1ffff;
+    }
+        /* コンテンツカバー */
+    #hamburger-demo1:checked ~ .hamburger-demo-cover{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9997;
+        background: rgba(3,3,3,.5);
+        display: block;
+    }
+    .slider li a img{
+        width: 100%;
+        outline:none;
+        border-style:none;
+        display: block;
+        margin: 0 auto;
+    }
+    .slick-list draggable{
+        width: 635px;
+        margin: 0px auto;
+    }
+    .Hausutenbosu{
+        width: 100%;
+        height: 300px;
+    }
+    #coment{
+        font-size: 20px;
+        color: green;
+        text-align: center;
+    }
+    footer{
+        margin-top: 85px;
+        height: 25px;
+        margin-bottom: 85px;
+        color: black;
+        text-align: center;
+        font-size: 15px;
+    }
+/*ここからイベントhtmlのcss*/
+.event{
+    background-image: url(images2/ハウステンボス光の王国イルミネーション.jpg);
+    padding-right: 15px; 
+    padding-left:  15px;
+    margin-bottom: 30px;
+}
+.monthly{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 35px;
+    color: #ff0000;
+}
+#name {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#event-coment{
+    margin-top: 0px;
+
+}
+#day {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+}
+/*イベントhtmlここまで*/
+ /*ここからレストラン・ショップhtmlのcss*/
+h3{
+    font-size: 30px;
+    color: #ff7b00;
+    margin-bottom: 0px;
+}
+#recommendation{
+    font-size: 20px;
+    color: crimson;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.restaurant{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.restaurant1{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.restaurant2{
+    margin-right: 20px;
+}
+.restaurant3{
+    margin-right: 10px;
+}
+#restaurant-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#restaurant-Explanation{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+h4{
+    font-size: 30px;
+    color: #2fffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.shop{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.shop1{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.shop2{
+    margin-right: 20px;
+}
+.shop3{
+    margin-right: 10px;
+}
+#shop-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+
+    /*レストラン・ショップここまで*/
+    /* ここからタブレットサイト*/
+    @media (min-width: 541px)and (max-width: 900px){
+        body{
+            margin: 0 auto;
+        }
+        .demobox-header{
+            background: #fff;
+            height: 80px;
+            padding: 1em;
+            }
+            /* headerのサイト名（デモの参考値） */
+            .demobox-sitename{
+            font-weight: 700;
+            font-size: 50px;
+            color: #001f7e;
+            }
+            #logo{
+                margin-top: -10px;
+            }
+            /* 全体調整CSS */
+            .hamburger-demo-menubox *{
+                font-size: 16px;
+            }
+            .hamburger-demo-menubox li{
+                font-size: 14px;
+            }
+            /* hamburgerここから */
+                /* inputを非表示 */
+            .input-hidden{
+                display: none;
+            }
+                /* label */
+            .hamburger-demo-switch{
+                cursor: pointer;
+                position: absolute;
+                right: 3%;
+                top: 0; /* ハンバーガーアイコンの位置（上から） */
+                z-index: 9999;
+                width: 4em; /* アイコン（クリック可能領域）の幅 */
+                height: 4em; /* アイコン（クリック可能領域の）高さ */
+            }
+            /* メニュー展開時にハンバーガーアイコンを固定 */
+            #hamburger-demo1:checked ~ .hamburger-demo-switch{
+                position: fixed;
+            }
+            /* ハンバーガーアイコン */
+            .hamburger-switch-line1, .hamburger-switch-line1:before, .hamburger-switch-line1:after{
+                width: 25px;
+                height: 3px;
+                background: #333; /* ハンバーガーアイコンの色 */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transition: .3s;
+                content: "";
+            }
+            .hamburger-switch-line1{
+                    transform: translate(-50%, -50%);
+            }
+            .hamburger-switch-line1:before{
+                transform: translate(-50%, -300%);
+            }
+            .hamburger-switch-line1:after{
+                transform: translate(-50%, 200%);
+            }
+            /* ハンバーガーアイコン･アニメーション */
+            #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1{
+                width: 0;
+            }
+            #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:before{
+                transform: rotate(45deg) translate(-40%, 325%);
+            }
+            #hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:after{
+                transform: rotate(-45deg) translate(-40%, -325%);
+            }
+            /* メニューエリア */
+            .hamburger-demo-menuwrap{
+                position: fixed;
+                height: 100%;
+                background: #fafafa; /* メニューエリアの背景色 */
+                padding: 5em 3% 2em;
+                z-index: 9998;
+                transition: .3s;
+                overflow-y: scroll; /* メニュー内容が多い場合に縦スクロールする */
+                top: 0;
+                left: 100%;
+                width: 70%;
+            }
+            /* メニューリスト */
+            .hamburger-demo-menulist{
+                margin-right: 3%;
+                padding-left: 5% !important; /* !important不要な場合もあり */
+                list-style: none;
+            }
+            .hamburger-demo-menulist li a{
+                text-decoration: none;
+                color: #333; /* メニューリストの文字色 */
+                display: block;
+                padding: .5em 0;
+            }
+            /* メニューエリア･アニメーション */
+                /* 右から */
+            #hamburger-demo1:checked ~ .hamburger-demo-menuwrap{
+                left: 70%;
+                background-color: #a1ffff;
+            }
+                /* コンテンツカバー */
+            #hamburger-demo1:checked ~ .hamburger-demo-cover{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 9997;
+                background: rgba(3,3,3,.5);
+                display: block;
+            }
+            .slider li a img{
+                width: 100%;
+                outline:none;
+                border-style:none;
+                display: block;
+                margin: 0 auto;
+            }
+            .slick-list draggable{
+                width: 635px;
+                margin: 0px auto;
+            }
+            .Hausutenbosu{
+                width: 100%;
+                height: 300px;
+            }
+            #coment{
+                font-size: 20px;
+                color: green;
+                text-align: center;
+            }
+            footer{
+                margin-top: 85px;
+                height: 25px;
+                margin-bottom: 85px;
+                color: black;
+                text-align: center;
+                font-size: 15px;
+            }
+        /*ここからイベントhtmlのcss*/
+        .event{
+            background-image: url(images2/ハウステンボス光の王国イルミネーション.jpg);
+            padding-right: 15px; 
+            padding-left:  15px;
+            margin-bottom: 30px;
+        }
+        .monthly{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 35px;
+            color: #ff0000;
+        }
+        #name {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+        #event-coment{
+            margin-top: 0px;
+        
+        }
+        #day {
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 10px;
+            margin-top: 0px;
+            margin-bottom: 55px;
+        }
+    }
+        /*イベントhtmlここまで*/
+    /* ここからスマートフォンサイト*/
+    @media (max-width: 540px){
+        .demobox-header{
+            background: #a637ca;
+            height: 80px;
+            padding: 1em;
+            }
+        }

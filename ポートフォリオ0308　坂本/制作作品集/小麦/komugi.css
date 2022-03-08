@@ -1,0 +1,43 @@
+body{
+    margin:  0 auto;
+    padding:  0 auto;
+}
+.contents{
+    background-image: url(images/top-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#logo{
+    margin-right: 530px;
+}
+#open{
+    width: 360px;
+    margin-left: 550px;
+    margin-top: -150px;
+}
+#tip{
+    width: 20%;
+    margin-top: -240px;
+    margin-bottom: 390px;
+    margin-left: 350px;
+    z-index: ;
+}
+nav{
+    width: 100%;
+    height: 400px;
+    margin-top: -220px;
+}
+a{ 
+    color:#fFF;
+}
+a:visited { /*アクセスしたことのあるリンク*/
+    color:#6600FF;
+    }
+#catch{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    margin-top: -400px;
+    color: #00ff00;
+}
+@media screen and (min-width:600px)

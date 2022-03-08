@@ -1,0 +1,152 @@
+body{
+    background-image: url(backimg-top-pro.png) ;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+header img{
+    width: 200px;
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+}
+main img{
+    margin-top: 70px;
+    margin-left: 140px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+}
+#name{
+    text-align: right;
+    font-size: 25px;
+    margin-right: 110px;
+    
+}
+aside{
+    width: 160px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-color: #48ff579c;
+}
+ul li{
+    padding: 5px;
+}
+/* プロフィール.html */
+.profile{
+    width: 600px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 70px;
+    background-color: #48ff5734;
+}
+span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -190px;
+    margin-right: 20px;
+   }
+h1{
+    margin-left: 20px;
+}
+table{
+    margin-left: 50px;
+}
+td.table-title{
+    width: 100px;
+    line-height: 50px;
+}
+/* 制作作品.html */
+.SAKUHIN{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 70px;
+    text-align: center;
+}
+.SAKUHIN img{
+    width: 600px;
+}
+.popup_wrap input {
+    display: none;
+  }
+  .popup_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: #37beb03d;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0s 0.5s;
+    transform: scale(0);
+  }
+  .popup_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .popup_content {
+    position: relative;
+    align-self: center;
+    width: 75%;
+    max-width: 800px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transition: 0.5s;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(94, 94, 94, 0.7);
+  }
+  .popup_content p{
+      padding:20px 20px 5px 20px;
+      text-align: center;
+  }
+  .close_btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 30px;
+    cursor: pointer;
+    color:#5bff8c;
+  }
+  .popup_wrap input:checked ~ .popup_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+  }
+  .open_btn {
+      color: #5bff8c;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: .3s ease;
+      border:1px solid #5bff8c;
+      padding:5px 15px;
+      font-weight: bold;
+  }
+  .open_btn:hover{
+      background:#5bff8c;
+      color:#fff;
+      transition: .3s ease;
+  }
+/* お問い合わせ.html */
+.OTOIAWASE{
+    width: 600px;
+    margin-left: 20px;
+}
+footer{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 80px;
+}

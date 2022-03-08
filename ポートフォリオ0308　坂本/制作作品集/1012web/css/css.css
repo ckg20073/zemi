@@ -1,0 +1,171 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+/* CSS Document */
+body{
+	position:relative;
+	font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+	max-width: 925px;
+	margin: 0 auto;
+
+}
+.slider li img{
+	width: 100%;
+	outline:none;
+	border-style:none;
+	display: block;
+	margin: 0 auto;
+}
+
+.title{
+	position: absolute;
+	z-index: 999;
+	right: 10px;
+	bottom: -175px;
+}
+header{
+	color: #00ffff;
+}
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    Top: 0px;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+h1{
+	font-size: 120px;
+	margin-top: -40px;
+    margin-bottom: -40px;
+}
+h1#takehisa{
+	margin-left: 110px;
+}
+header p{
+	font-size: 45px
+}
+
+@media screen and (min-width:600px){
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	/* CSS Document */
+	body{
+		position:relative;
+		font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+		margin: 0 auto;
+
+	}
+	.slider li img{
+		width: 100%;
+		outline:none;
+		border-style:none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.title{
+		position: absolute;
+		z-index: 999;
+		right: 10px;
+		bottom: -175px;
+	}
+	header{
+		color: #00ffff;
+	}
+	h1{
+		font-size: 60px;
+		margin-top: -40px;
+		margin-bottom: -40px;
+	}
+	h1#takehisa{
+		margin-left: 110px;
+	}
+	header p{
+		font-size: 45px
+	}
+	
+}

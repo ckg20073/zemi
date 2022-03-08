@@ -1,0 +1,101 @@
+body{
+    width: 1024px;
+    margin: 0 auto;
+}
+.wrapper{
+    background-image: url(images/mainimg.png);
+    background-repeat: no-repeat;
+
+}
+header p{
+    text-align: center;
+    margin: 0px;
+    padding-top: 45px;
+    height: 15px;
+}
+h1{
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0px;
+}
+.images{
+    text-align: center;
+}
+.images img{
+    margin: 0px 10px;
+}
+.open{
+    width: 406px;
+    margin: 0 auto;
+}
+.open h2{
+    margin-top: 20px;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-size: 38px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+.open p{
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+}
+.special{
+    width: 980px;
+    margin: 0 auto;
+    margin-right: -290px;
+}
+#special{
+    display: flex;
+    flex-direction: row;
+}
+#special #price{
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0px 0px 10px;
+}
+#special #price span{
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.special table td{
+    padding-right: 8px;
+}
+.period h3{
+    width: 590px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px
+}
+.period p{
+    width: 416px;
+    margin: 0 auto;
+    text-align: center;
+}
+#others{
+    width: 416px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 495px;
+}
+.foot title p{
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    line-height: 12px;
+}
+.footaddress{
+    font-size: 12px;
+    line-height: 7px;
+    margin-left: 15px;
+}
